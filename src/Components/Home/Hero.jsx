@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import shoes from '../../assets/img/Home/shoes.webp';
 
 export const Hero = () => {
     return (
-        <section className='shadow-lg rounded-lg w-full max-h-screen '>
+        <section className='md:shadow-lg md:rounded-lg w-full max-h-screen '>
             <div className='  h-full lg:flex'>
                 <img
-                    src='https://flowbite.com/docs/images/carousel/carousel-1.svg'
+                    src={shoes}
                     alt='shoes.webp'
                     className='h-[575px] sm:h-full lg:h-screen lg:w-3/4 object-cover rounded-md'
                 />

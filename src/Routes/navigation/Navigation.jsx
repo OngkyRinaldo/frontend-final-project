@@ -1,5 +1,6 @@
 import { Navbar, Dropdown, Avatar, Modal } from 'flowbite-react';
 import { Link, Outlet } from 'react-router-dom';
+import logo from '../../assets/img/Home/etq-amsterdam-logo-svg-vector.png';
 
 export const Navigation = () => {
     return (
@@ -7,7 +8,7 @@ export const Navigation = () => {
             <Navbar fluid={true} rounded={true} className='text-center'>
                 <Link to='/'>
                     <img
-                        src='https://flowbite.com/docs/images/logo.svg'
+                        src={logo}
                         className='mr-3 h-6 sm:h-9'
                         alt='Flowbite Logo'
                     />
@@ -47,14 +48,40 @@ export const Navigation = () => {
                     <Navbar.Toggle />
                 </div>
                 <Navbar.Collapse>
-                    <Link to='/'>Home</Link>
-                    <Link to='products'>Shop All</Link>
-                    <Link to='newestProduct'>New In</Link>
-                    <Link to='#'>Search</Link>
+                    <Link
+                        to='/'
+                        className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                    >
+                        Home
+                    </Link>
+                    <Link
+                        to='products'
+                        className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                    >
+                        Shop All
+                    </Link>
+                    <Link
+                        to='newestProduct'
+                        className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                    >
+                        New In
+                    </Link>
+                    <Link
+                        to='#'
+                        id='search-trigger'
+                        className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                    >
+                        Search
+                    </Link>
                     <div className='flex md:order-2 items-center justify-center ml-2'>
                         <Dropdown arrowIcon={true} inline={true} label='Help '>
                             <Dropdown.Item>
-                                <Link to='overview'>Overview</Link>
+                                <Link
+                                    to='overview'
+                                    className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                                >
+                                    Overview
+                                </Link>
                             </Dropdown.Item>
                         </Dropdown>
                     </div>
