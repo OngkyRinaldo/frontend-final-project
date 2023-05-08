@@ -1,6 +1,7 @@
-import { Navbar, Dropdown, Avatar, Modal } from 'flowbite-react';
+import { Navbar, Dropdown, Avatar } from 'flowbite-react';
 import { Link, Outlet } from 'react-router-dom';
 import logo from '../../assets/img/Home/etq-amsterdam-logo-svg-vector.png';
+import React from 'react';
 
 export const Navigation = () => {
     return (
@@ -43,6 +44,7 @@ export const Navigation = () => {
                             </Link>
                         </Dropdown.Item>
                         <Dropdown.Divider />
+                        <Dropdown.Item></Dropdown.Item>
                         <Dropdown.Item>Sign Out</Dropdown.Item>
                     </Dropdown>
                     <Navbar.Toggle />
