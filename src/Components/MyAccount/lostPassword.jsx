@@ -12,7 +12,7 @@ export const LostPassword = () => {
                             >
 
                             <Link
-                                to={"/signUp"}
+                                to={"/register"}
                                 className="text-sm hover:underline mt-3 md:mt-10"
                             >Create an account</Link >
                         </div>
@@ -45,14 +45,14 @@ export const LostPassword = () => {
                             <div className="mb-6 grid grid-cols-1 gap-3 md:grid-cols-2">
                                 <div className="flex justify-center md:justify-start">
                                     <Link
-                                        to={"/signUp"}
+                                        to={"/login"}
                                         className="text-sm font-normal hover:underline text-gray-900 dark:text-gray-300 p-1.5 md:p-0"
                                     >
                                         Cancel
                                     </Link>
                                 </div>
                                 <Link
-                                    to={"/signIn"}
+                                    to={"/login"}
                                     type="submit"
                                     className="text-white bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-600 font-normal text-sm px-16 py-2.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800 md:float-right"
                                 >

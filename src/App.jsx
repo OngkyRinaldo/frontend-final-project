@@ -4,9 +4,10 @@ import { Home } from './Routes/home/Home';
 import { Overview } from './Routes/navigation/help/Overview';
 import { NewProduct } from './Routes/newProduct/NewProduct';
 import { Products } from './Routes/products/Products';
-import { SignInRoute } from './Routes/signIn/signIn';
-import { SignUpRoute } from './Routes/signUp/signUp';
-import { LostPasswordRoute } from './Routes/lostPassword/lostPassword';
+import { LoginRoute } from './Routes/myAccount/Login';
+import { RegisterRoute } from './Routes/myAccount/Register';
+import { LostPassword } from './Components/MyAccount/lostPassword';
+import { LostPasswordRoute } from './Routes/myAccount/lostPassword';
 
 const App = () => {
     return (
@@ -16,12 +17,13 @@ const App = () => {
                     <Route index element={<Home />} />
                     <Route path='products' element={<Products />} />
                     <Route path='newestProduct' element={<NewProduct />} />
-                    <Route path='signIn' element={<SignInRoute />} />
-                    <Route path='signUp' element={<SignUpRoute />} />
+                    <Route path='login' element={<LoginRoute />} />
+                    <Route path='register' element={<RegisterRoute />} />
                     <Route path='lostPassword' element={<LostPasswordRoute />} />
+
                     {/* help page  start*/}
                     <Route path='overview' element={<Overview />} />
-                    {/* help page  end*/}
+                    {/* navigation page  end*/}
                 </Route>
             </Routes>
         </>

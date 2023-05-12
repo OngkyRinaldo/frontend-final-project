@@ -1,10 +1,10 @@
-import { SignIn } from '../../Components/signIn/signIn.component';
+import { Login } from '../../Components/MyAccount/Login';
 import { Footer } from '../navigation/footer/Footer';
 
-export const SignInRoute = () => {
+export const LoginRoute = () => {
     return (
         <>
-            <SignIn />
+            <Login />
             <Footer />
         </>
     );

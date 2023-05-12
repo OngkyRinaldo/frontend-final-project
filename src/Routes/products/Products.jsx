@@ -1,4 +1,3 @@
-import React from 'react';
 import { IndexProducts } from '../../Components/products/IndexProducts';
 import { Footer } from '../navigation/footer/Footer';
 
