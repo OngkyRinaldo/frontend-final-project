@@ -1,8 +1,6 @@
-import React from 'react';
 import { Hero } from './Hero';
 import { ProductList } from './ProductList';
 import { GiftCard } from './GiftCard';
-import { Footer } from '../../Routes/navigation/footer/Footer';
 
 export const HomeIndex = () => {
     return (

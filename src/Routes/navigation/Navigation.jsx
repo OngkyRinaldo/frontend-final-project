@@ -1,16 +1,19 @@
 import { Navbar, Dropdown, Avatar } from 'flowbite-react';
 import { Link, Outlet } from 'react-router-dom';
 import logo from '../../assets/img/Home/etq-amsterdam-logo-svg-vector.png';
-import React from 'react';
 
 export const Navigation = () => {
     return (
         <>
-            <Navbar fluid={true} rounded={true} className='text-center'>
+            <Navbar
+                fluid={true}
+                rounded={true}
+                className='sticky top-0 z-50 shadow-lg w-full text-center'
+            >
                 <Link to='/'>
                     <img
                         src={logo}
-                        className='mr-3 h-6 sm:h-9'
+                        className='mr-3 h-8 sm:h-9'
                         alt='Flowbite Logo'
                     />
                 </Link>
@@ -44,43 +47,46 @@ export const Navigation = () => {
                             </Link>
                         </Dropdown.Item>
                         <Dropdown.Divider />
-                        <Dropdown.Item></Dropdown.Item>
-                        <Dropdown.Item>Sign Out</Dropdown.Item>
+
+                        <Dropdown.Item>
+                            <Link to='/login'>Login</Link>
+                        </Dropdown.Item>
                     </Dropdown>
                     <Navbar.Toggle />
                 </div>
                 <Navbar.Collapse>
                     <Link
                         to='/'
-                        className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                        className='text-xl  block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
                     >
                         Home
                     </Link>
                     <Link
                         to='products'
-                        className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                        className='text-xl block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
                     >
                         Shop All
                     </Link>
                     <Link
                         to='newestProduct'
-                        className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                        className='text-xl block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
                     >
                         New In
                     </Link>
                     <Link
                         to='#'
                         id='search-trigger'
-                        className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                        className='text-xl block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
                     >
                         Search
                     </Link>
-                    <div className='flex md:order-2 items-center justify-center ml-2'>
+
+                    <div className='flex md:order-2 items-center justify-center ml-2 text-xl'>
                         <Dropdown arrowIcon={true} inline={true} label='Help '>
                             <Dropdown.Item>
                                 <Link
                                     to='overview'
-                                    className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                                    className=' block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
                                 >
                                     Overview
                                 </Link>

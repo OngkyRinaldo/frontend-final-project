@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const GiftCard = () => {
     return (
         <section className=' shadow-lg  rounded-lg container max-h-full mx-auto mt-200 sm:mt-16 px-4 pb-30 mt-5'>
