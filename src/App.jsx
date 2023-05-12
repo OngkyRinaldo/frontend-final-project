@@ -4,6 +4,8 @@ import { Home } from './Routes/home/Home';
 import { Overview } from './Routes/navigation/help/Overview';
 import { NewProduct } from './Routes/newProduct/NewProduct';
 import { Products } from './Routes/products/Products';
+import { Register } from './Components/MyAccount/Register';
+import { Login } from './Components/MyAccount/Login';
 
 const App = () => {
     return (
@@ -14,9 +16,11 @@ const App = () => {
                     <Route path='products' element={<Products />} />
                     <Route path='newestProduct' element={<NewProduct />} />
 
-                    {/* help page  start*/}
+                    {/* navigation page  start*/}
+                    <Route path='login' element={<Login />} />
+                    <Route path='/register' element={<Register />} />
                     <Route path='overview' element={<Overview />} />
-                    {/* help page  end*/}
+                    {/* navigation page  end*/}
                 </Route>
             </Routes>
         </>

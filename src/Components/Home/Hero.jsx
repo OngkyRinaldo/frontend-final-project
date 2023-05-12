@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import shoes from '../../assets/img/Home/shoes.webp';
 
