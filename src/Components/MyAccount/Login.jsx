@@ -57,12 +57,12 @@ export const Login = () => {
                             <hr className='border-t border-slate-300 py-3' />
                             <div className='md:flex-row lg:flex-row md:flex justify-start md:justify-between mb-6 sm:grid sm:grid-cols-1 sm:gap-1'>
                                 <div>
-                                    <a
-                                        href='lostPassword.html'
+                                    <Link
+                                        to='/lostPassword'
                                         className='text-sm font-normal hover:underline text-gray-900 dark:text-gray-300'
                                     >
                                         Lost your password?
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div className='md:mt-0 lg:md-0 mt-3'>
                                     <button
