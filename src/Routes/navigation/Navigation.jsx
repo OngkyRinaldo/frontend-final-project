@@ -28,19 +28,25 @@ export const Navigation = () => {
                         }
                     >
                         <Dropdown.Header>
-                            <span className='block text-sm'>Bonnie Green</span>
+                            <span className='block text-sm'>username</span>
                             <span className='block truncate text-sm font-medium'>
-                                name@flowbite.com
+                                username@email.com
                             </span>
                         </Dropdown.Header>
-                        <Dropdown.Item>Dashboard</Dropdown.Item>
-                        <Dropdown.Item>Settings</Dropdown.Item>
-                        <Dropdown.Item>Earnings</Dropdown.Item>
+                        <Dropdown.Item className='font-bold'>
+                            <Link to={"signIn"}>Login/Sign up</Link>
+                        </Dropdown.Item>
+                        <Dropdown.Item>Profile</Dropdown.Item>
+
                         <Dropdown.Item>
-                            <Link to='#'>
-                                <span className='bg-slate-800 text-white text-sm font-medium px-2.5 py-1 rounded-full dark:bg-gray-700 dark:text-gray-300'>
-                                    7
-                                </span>
+                            <Link to='#' className='flex font-bold'>
+                                Cart
+                                <div className='pl-2'>
+                                    <span className=' bg-slate-800 text-white text-sm font-medium px-2.5 py-1 rounded-full dark:bg-gray-700 dark:text-gray-300'>
+                                        7
+                                    </span>
+                                </div>
+
                             </Link>
                         </Dropdown.Item>
                         <Dropdown.Divider />
