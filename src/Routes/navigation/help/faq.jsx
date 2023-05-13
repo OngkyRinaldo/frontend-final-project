@@ -1,5 +1,6 @@
 import HelpAsk from "../../../assets/img/Help/overview.webp"
 import { Link } from "react-router-dom"
+import { Footer } from '../footer/Footer';
 
 export const Faq = () => {
 
@@ -462,6 +463,8 @@ export const Faq = () => {
                     </div>
                 </section>
             </main>
+            <Footer />
         </>
+
     )
 }

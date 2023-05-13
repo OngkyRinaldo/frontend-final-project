@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom"
 import HelpAsk from "../../../assets/img/Help/overview.webp"
+import { Footer } from '../footer/Footer';
 
 export const ShippingInfo = () => {
     return (
+        <>
+        
         <main>
             <div id="hero-overview" class="mb-3 md:mb-5 lg:mb-8">
                 <img
@@ -239,5 +242,7 @@ export const ShippingInfo = () => {
                 </div>
             </section>
         </main>
+        <Footer />
+        </>
     )
 }
