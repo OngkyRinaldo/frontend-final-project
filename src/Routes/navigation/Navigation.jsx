@@ -8,12 +8,12 @@ export const Navigation = () => {
             <Navbar
                 fluid={true}
                 rounded={true}
-                className='sticky top-0 z-50 shadow-lg w-full text-center'
+                className='sticky top-0  z-50 shadow-lg w-full  text-center'
             >
                 <Link to='/'>
                     <img
                         src={logo}
-                        className='mr-3 h-8 sm:h-9'
+                        className='mr-6 h-8 sm:h-9'
                         alt='Flowbite Logo'
                     />
                 </Link>
@@ -91,12 +91,29 @@ export const Navigation = () => {
                         <Dropdown arrowIcon={true} inline={true} label='Help '>
                             <Dropdown.Item>
                                 <Link
-                                    to='overview'
-                                    className=' block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                                    to={"overview"}
+                                    className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white '
                                 >
                                     Overview
                                 </Link>
                             </Dropdown.Item>
+
+                            <Dropdown.Item>
+                                <Link
+                                    to={"sizeGuide"}
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                >Size Guide</Link >
+                            </Dropdown.Item>
+
+
+                            <Dropdown.Item>
+                                <Link
+                                    to={"faq"}
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                >FAQ</Link >
+                            </Dropdown.Item>
+
+
                         </Dropdown>
                     </div>
                 </Navbar.Collapse>
