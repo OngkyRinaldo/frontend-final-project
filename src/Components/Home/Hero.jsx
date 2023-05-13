@@ -8,7 +8,7 @@ export const Hero = () => {
                 <img
                     src={shoes}
                     alt='shoes.webp'
-                    className='h-[575px] sm:h-full lg:h-screen lg:w-3/4 object-cover rounded-md'
+                    className='h-[575px] sm:h-full lg:h-screen lg:w-3/4 object-cover '
                 />
                 <div className='text-center lg:text-left  text-white lg:text-black p-5 -mt-36 sm:-mt-52 lg:mt-0 lg:py-36 lg:w-1/4 xl:w-1/5'>
                     <h2 className='text-base font-medium'>

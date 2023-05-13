@@ -94,22 +94,26 @@ export const Footer = () => {
                         <div className="grid grid-rows-2 px-4 py-3">
                             <div className="flex">
                                 <form className="">
-                                    <label htmlFor="langganan" className="text-sm p-0 m-0">
-                                        Join our newsletter.
-                                    </label>
-                                    <div className="flex">
-                                        <input
-                                            id="langganan"
-                                            className="border-slate-200 shadow rounded w-full block mt-2"
-                                            type="text"
-                                            placeholder="Enter your email"
-                                        />
-                                        <button
-                                            type="button"
-                                            className="bg-slate-200 font-semibold hover:uderline py-3 px-3 rounded-md mt-2 ml-4 border border-slate-600 hover:bg-slate-500"
-                                        >
-                                            Submit
-                                        </button>
+
+                                    <div className="flex-col lg:flex-row">
+                                        <label htmlFor="langganan" className="text-sm mt-2 lg:mr-6">
+                                            Join our newsletter.
+                                        </label>
+                                        <div className="flex">
+                                            <input
+                                                id="langganan"
+                                                className="border-slate-200  shadow rounded w-full block mt-2"
+                                                type="text"
+                                                placeholder="Enter your email"
+                                            />
+                                            <button
+                                                type="button"
+                                                className="bg-slate-200 font-semibold hover:uderline py-3 px-3 rounded-md mt-2 ml-4 border border-slate-600 hover:bg-slate-500"
+                                            >
+                                                Submit
+                                            </button>
+                                        </div>
+
                                     </div>
                                 </form>
                             </div>
@@ -119,7 +123,7 @@ export const Footer = () => {
                                     <a className="hover:underline" href="http://">Privacy Policy </a>
                                     and
                                     <a className="hover:underline" href="http://"
-                                    >Terms of Service apply.</a
+                                    > Terms of Service apply.</a
                                     >
                                 </p>
                             </div>
