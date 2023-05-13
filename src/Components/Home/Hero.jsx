@@ -26,7 +26,7 @@ export const Hero = () => {
                         </span>
                     </p>
                     <Link
-                        to='#'
+                        to={"productDetails"}
                         className='w-fit border-b-2 border-white lg:border-black  hover:border-none md:tracking-widest'
                     >
                         Shop Now

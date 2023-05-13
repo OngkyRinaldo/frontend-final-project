@@ -95,10 +95,13 @@ export const Footer = () => {
                             <div className="flex">
                                 <form className="">
 
-                                    <div className="flex-col lg:flex-row">
-                                        <label htmlFor="langganan" className="text-sm mt-2 lg:mr-6">
-                                            Join our newsletter.
-                                        </label>
+                                    <div className="flex-col md:flex">
+                                        <div className="flex">
+                                            <label htmlFor="langganan" className="text-sm mt-2 lg:mr-6">
+                                                Join our newsletter.
+                                            </label>
+                                        </div>
+
                                         <div className="flex">
                                             <input
                                                 id="langganan"
@@ -120,7 +123,7 @@ export const Footer = () => {
                             <div className="py-3">
                                 <p className="text-slate-500 text-sm">
                                     This site is protected by reCAPTCHA and the Google
-                                    <a className="hover:underline" href="http://">Privacy Policy </a>
+                                    <a className="hover:underline" href="http://"> Privacy Policy </a>
                                     and
                                     <a className="hover:underline" href="http://"
                                     > Terms of Service apply.</a

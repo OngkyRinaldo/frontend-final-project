@@ -9,6 +9,7 @@ import { RegisterRoute } from './Routes/myAccount/Register';
 import { LostPasswordRoute } from './Routes/myAccount/lostPassword';
 import { SizeGuide } from './Routes/navigation/help/sizeGuide';
 import { Faq } from './Routes/navigation/help/faq';
+import { ProductDetailRoute } from './Routes/products/productDetails';
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
                     <Route path='login' element={<LoginRoute />} />
                     <Route path='register' element={<RegisterRoute />} />
                     <Route path='lostPassword' element={<LostPasswordRoute />} />
+                    <Route path='productDetails' element={<ProductDetailRoute />} />
 
                     {/* help page  start*/}
                     <Route path='overview' element={<Overview />} />
