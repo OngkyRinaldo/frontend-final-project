@@ -2,7 +2,6 @@ import { Route, Routes } from 'react-router-dom';
 import { Navigation } from './Routes/navigation/Navigation';
 import { Home } from './Routes/home/Home';
 import { Overview } from './Routes/navigation/help/Overview';
-import { NewProduct } from './Routes/newProduct/NewProduct';
 import { Products } from './Routes/products/Products';
 import { LoginRoute } from './Routes/myAccount/Login';
 import { RegisterRoute } from './Routes/myAccount/Register';
@@ -11,7 +10,6 @@ import { SizeGuide } from './Routes/navigation/help/sizeGuide';
 import { Faq } from './Routes/navigation/help/faq';
 import { ProductDetailRoute } from './Routes/products/productDetails';
 
-
 const App = () => {
     return (
         <>
@@ -19,11 +17,16 @@ const App = () => {
                 <Route path='/' element={<Navigation />}>
                     <Route index element={<Home />} />
                     <Route path='products' element={<Products />} />
-                    <Route path='newestProduct' element={<NewProduct />} />
                     <Route path='login' element={<LoginRoute />} />
                     <Route path='register' element={<RegisterRoute />} />
-                    <Route path='lostPassword' element={<LostPasswordRoute />} />
-                    <Route path='productDetails' element={<ProductDetailRoute />} />
+                    <Route
+                        path='lostPassword'
+                        element={<LostPasswordRoute />}
+                    />
+                    <Route
+                        path='productDetails'
+                        element={<ProductDetailRoute />}
+                    />
 
                     {/* help page  start*/}
                     <Route path='overview' element={<Overview />} />

@@ -37,7 +37,7 @@ export const Navigation = () => {
                             </span>
                         </Dropdown.Header>
                         <Dropdown.Item className='font-bold'>
-                            <Link to={"login"}>Login/Sign up</Link>
+                            <Link to={'login'}>Login/Sign up</Link>
                         </Dropdown.Item>
                         <Dropdown.Item>Profile</Dropdown.Item>
 
@@ -49,7 +49,6 @@ export const Navigation = () => {
                                         7
                                     </span>
                                 </div>
-
                             </Link>
                         </Dropdown.Item>
                         <Dropdown.Divider />
@@ -73,12 +72,7 @@ export const Navigation = () => {
                     >
                         Shop All
                     </Link>
-                    <Link
-                        to='newestProduct'
-                        className='text-xl block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
-                    >
-                        New In
-                    </Link>
+
                     <Link
                         to='#'
                         id='search-trigger'
@@ -91,7 +85,7 @@ export const Navigation = () => {
                         <Dropdown arrowIcon={true} inline={true} label='Help '>
                             <Dropdown.Item>
                                 <Link
-                                    to={"overview"}
+                                    to={'overview'}
                                     className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white '
                                 >
                                     Overview
@@ -100,20 +94,21 @@ export const Navigation = () => {
 
                             <Dropdown.Item>
                                 <Link
-                                    to={"sizeGuide"}
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                                >Size Guide</Link >
+                                    to={'sizeGuide'}
+                                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                                >
+                                    Size Guide
+                                </Link>
                             </Dropdown.Item>
-
 
                             <Dropdown.Item>
                                 <Link
-                                    to={"faq"}
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                                >FAQ</Link >
+                                    to={'faq'}
+                                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                                >
+                                    FAQ
+                                </Link>
                             </Dropdown.Item>
-
-
                         </Dropdown>
                     </div>
                 </Navbar.Collapse>

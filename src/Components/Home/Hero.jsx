@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
-import shoes from '../../assets/img/Home/shoes.webp';
 
 export const Hero = () => {
     return (
         <section className='md:shadow-lg md:rounded-lg w-full max-h-screen '>
             <div className='  h-full lg:flex'>
                 <img
-                    src={shoes}
+                    src='/src/assets/img/home/shoes.webp'
                     alt='shoes.webp'
                     className='h-[575px] sm:h-full lg:h-screen lg:w-3/4 object-cover '
                 />
@@ -26,7 +25,7 @@ export const Hero = () => {
                         </span>
                     </p>
                     <Link
-                        to={"productDetails"}
+                        to='/productDetails'
                         className='w-fit border-b-2 border-white lg:border-black  hover:border-none md:tracking-widest'
                     >
                         Shop Now
