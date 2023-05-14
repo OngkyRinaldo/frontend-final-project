@@ -39,7 +39,6 @@ export const Navigation = () => {
                         <Dropdown.Item className='font-bold'>
                             <Link to={'login'}>Login/Sign up</Link>
                         </Dropdown.Item>
-                        <Dropdown.Item>Profile</Dropdown.Item>
 
                         <Dropdown.Item>
                             <Link to='#' className='flex font-bold'>
@@ -54,7 +53,7 @@ export const Navigation = () => {
                         <Dropdown.Divider />
 
                         <Dropdown.Item>
-                            <Link to='/login'>Login</Link>
+                            <Link to='#'>Sign Out</Link>
                         </Dropdown.Item>
                     </Dropdown>
                     <Navbar.Toggle />
