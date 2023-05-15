@@ -9,6 +9,8 @@ import { LostPasswordRoute } from './Routes/myAccount/lostPassword';
 import { SizeGuide } from './Routes/navigation/help/sizeGuide';
 import { Faq } from './Routes/navigation/help/faq';
 import { ProductDetailRoute } from './Routes/products/productDetails';
+import { ShippingInfo } from './Routes/navigation/help/shippingInfo';
+import { ReturnExchangesInfo } from './Routes/navigation/help/returnExchangesInfo';
 
 const App = () => {
     return (
@@ -31,6 +33,14 @@ const App = () => {
                     {/* help page  start*/}
                     <Route path='overview' element={<Overview />} />
                     <Route path='sizeGuide' element={<SizeGuide />} />
+                    <Route
+                        path='shippingInformation'
+                        element={<ShippingInfo />}
+                    />
+                    <Route
+                        path='returnExchange'
+                        element={<ReturnExchangesInfo />}
+                    />
                     <Route path='faq' element={<Faq />} />
                     {/* navigation page  end*/}
                 </Route>
