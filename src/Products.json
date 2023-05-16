@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "LT 01 Court Lite White",
+        "price": "$169",
+        "image": "/src/assets/img/home/shoes.webp",
+        "material": "Full Grain Leather"
+    },
+    {
+        "id": 2,
+        "title": "LS 01 Suede Desert Taupe",
+        "price": "$229",
+        "image": "https://cdn.shopify.com/s/files/1/0505/9044/9849/products/ETQ-Januari23-0396_v1crob_3840x.jpg?v=1678109861",
+        "material": "Full Grain Leather"
+    }
+]

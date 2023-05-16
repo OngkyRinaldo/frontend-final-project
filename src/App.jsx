@@ -26,7 +26,7 @@ const App = () => {
                         element={<LostPasswordRoute />}
                     />
                     <Route
-                        path='productDetails'
+                        path='productDetails/:id'
                         element={<ProductDetailRoute />}
                     />
 
