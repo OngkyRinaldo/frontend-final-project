@@ -1,34 +1,46 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import Products from '../../Products.json';
 
 export const ProductDetail = () => {
     const { id } = useParams();
+    const navigate = useNavigate();
     return (
         <main className='container w-screen mx-0 max-h-full min-h-full min-w-full mb-10'>
             <div className='grid grid-cols-1 md:gap-4 md:grid-cols-3 px-5 md:mt-5'>
                 <div className='col-span-2 '>
-
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="grid gap-4">
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+                        <div className='grid gap-4'>
                             <div className='group overflow-hidden hover:scale-95 transition duration-500 ease-in-out'>
-                                <img className="h-72 object-cover w-full rounded-lg group-hover:scale-125 group-hover:rotate-6 transition duration-500 ease-in-out" src={Products[id - 1].image} alt={Products[id - 1].title} />
+                                <img
+                                    className='h-72 object-cover w-full rounded-lg group-hover:scale-125 group-hover:rotate-6 transition duration-500 ease-in-out'
+                                    src={Products[id - 1].image}
+                                    alt={Products[id - 1].title}
+                                />
                             </div>
                             <div className='group overflow-hidden hover:scale-95 transition duration-500 ease-in-out'>
-                                <img className="h-72 object-cover w-full rounded-lg group-hover:scale-125 group-hover:rotate-6 transition duration-500 ease-in-out" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="" />
+                                <img
+                                    className='h-72 object-cover w-full rounded-lg group-hover:scale-125 group-hover:rotate-6 transition duration-500 ease-in-out'
+                                    src='https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg'
+                                    alt=''
+                                />
                             </div>
-
                         </div>
-                        <div className="grid gap-4">
+                        <div className='grid gap-4'>
                             <div className='group overflow-hidden hover:scale-95 transition duration-500 ease-in-out'>
-                                <img className="h-72 object-cover w-full rounded-lg group-hover:scale-125 group-hover:rotate-6 transition duration-500 ease-in-out" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="" />
+                                <img
+                                    className='h-72 object-cover w-full rounded-lg group-hover:scale-125 group-hover:rotate-6 transition duration-500 ease-in-out'
+                                    src='https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg'
+                                    alt=''
+                                />
                             </div>
                             <div className='group overflow-hidden hover:scale-95 transition duration-500 ease-in-out'>
-                                <img className="h-72 object-cover w-full rounded-lg group-hover:scale-125 group-hover:rotate-6 transition duration-500 ease-in-out" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="" />
+                                <img
+                                    className='h-72 object-cover w-full rounded-lg group-hover:scale-125 group-hover:rotate-6 transition duration-500 ease-in-out'
+                                    src='https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg'
+                                    alt=''
+                                />
                             </div>
-
                         </div>
-
                     </div>
                 </div>
                 <div className='col-span-1'>
@@ -48,7 +60,12 @@ export const ProductDetail = () => {
                         </div>
 
                         <div className='flex items-center justify-center py-2'>
-                            <button className='rounded-lg bg-slate-900 w-full py-3 text-white font-bold text-base hover:opacity-75'>
+                            <button
+                                onClick={() =>
+                                    navigate(`/cart/${Products[id - 1].id}`)
+                                }
+                                className='rounded-lg bg-slate-900 w-full py-3 text-white font-bold text-base hover:opacity-75'
+                            >
                                 Add to bag
                             </button>
                         </div>

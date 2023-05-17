@@ -2,9 +2,9 @@ import { Navbar, Dropdown, Avatar } from 'flowbite-react';
 import { Link, Outlet } from 'react-router-dom';
 import logo from '../../assets/img/Home/etq-amsterdam-logo-svg-vector.png';
 import React, { useEffect, useState } from 'react';
+import { Search } from '../../Components/Navigation/Search';
 
 export const Navigation = () => {
-
     const [showShadow, setShowShadow] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
@@ -20,12 +20,13 @@ export const Navigation = () => {
 
     return (
         <>
-
-
             <Navbar
                 fluid={true}
                 rounded={true}
-                className={`sticky top-0 z-50 w-full text-center  ${showShadow ? 'shadow-lg' : ''}`}>
+                className={`sticky top-0 z-50 w-full text-center  ${
+                    showShadow ? 'shadow-lg' : ''
+                }`}
+            >
                 <Link to='/'>
                     <img
                         src={logo}
@@ -89,14 +90,6 @@ export const Navigation = () => {
                         Shop All
                     </Link>
 
-                    <Link
-                        to='#'
-                        id='search-trigger'
-                        className='text-lg font-bold block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
-                    >
-                        Search
-                    </Link>
-
                     <div className='flex md:order-2 items-center justify-center ml-2 text-lg font-bold'>
                         <Dropdown arrowIcon={true} inline={true} label='Help '>
                             <Dropdown.Item>
@@ -111,7 +104,7 @@ export const Navigation = () => {
                             <Dropdown.Item>
                                 <Link
                                     to={'sizeGuide'}
-                                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                                    className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
                                 >
                                     Size Guide
                                 </Link>
@@ -120,13 +113,17 @@ export const Navigation = () => {
                             <Dropdown.Item>
                                 <Link
                                     to={'faq'}
-                                    class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                                    className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
                                 >
                                     FAQ
                                 </Link>
                             </Dropdown.Item>
                         </Dropdown>
                     </div>
+
+                    <Link className='text-lg font-bold block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'>
+                        <Search />
+                    </Link>
                 </Navbar.Collapse>
             </Navbar>
 

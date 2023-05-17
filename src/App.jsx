@@ -31,14 +31,8 @@ const App = () => {
                         path='productDetails/:id'
                         element={<ProductDetailRoute />}
                     />
-                    <Route
-                        path='cart'
-                        element={<CartRoute />}
-                    />
-                    <Route
-                        path='shipping'
-                        element={<ShippingRoute />}
-                    />
+                    <Route path='cart/:id' element={<CartRoute />} />
+                    <Route path='shipping/:id' element={<ShippingRoute />} />
 
                     {/* help page  start*/}
                     <Route path='overview' element={<Overview />} />
