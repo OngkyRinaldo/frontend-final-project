@@ -5,7 +5,7 @@ export const Hero = () => {
         <section className='md:shadow-lg md:rounded-lg w-full max-h-screen '>
             <div className='  h-full lg:flex'>
                 <img
-                    src='/src/assets/img/home/shoes.webp'
+                    src='https://cdn.shopify.com/s/files/1/0505/9044/9849/files/etq_april-15_3efc11dc-c4c4-44b2-9beb-6af89e2b343d_2048x.jpg?v=1682752541'
                     alt='shoes.webp'
                     className='h-[575px] sm:h-full lg:h-screen lg:w-3/4 object-cover '
                 />

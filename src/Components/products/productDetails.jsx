@@ -49,7 +49,6 @@ export const ProductDetail = () => {
                         <div className='flex items-center justify-between py-2'>
                             <h3 className='font-bold text-slate-400 text-lg'>
                                 <span className='text-slate-900'>
-                                    {' '}
                                     {Products[id - 1].price}
                                 </span>
                             </h3>
