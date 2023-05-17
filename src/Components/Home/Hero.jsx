@@ -7,7 +7,7 @@ export const Hero = () => {
                 <img
                     src='https://cdn.shopify.com/s/files/1/0505/9044/9849/files/etq_april-15_3efc11dc-c4c4-44b2-9beb-6af89e2b343d_2048x.jpg?v=1682752541'
                     alt='shoes.webp'
-                    className='h-[575px] sm:h-full lg:h-screen lg:w-3/4 object-cover '
+                    className='h-[575px] sm:h-full lg:h-screen lg:w-3/4  object-cover '
                 />
                 <div className='text-center lg:text-left  text-white lg:text-black p-5 -mt-36 sm:-mt-52 lg:mt-0 lg:py-36 lg:w-1/4 xl:w-1/5'>
                     <h2 className='text-base font-medium'>
