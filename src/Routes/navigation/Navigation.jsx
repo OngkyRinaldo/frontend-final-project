@@ -8,7 +8,7 @@ export const Navigation = () => {
             <Navbar
                 fluid={true}
                 rounded={true}
-                className='sticky top-0  z-50 shadow-lg w-full  text-center'
+                className='sticky top-0  z-50 shadow-md w-full  text-center'
             >
                 <Link to='/'>
                     <img
@@ -41,7 +41,7 @@ export const Navigation = () => {
                         </Dropdown.Item>
 
                         <Dropdown.Item>
-                            <Link to='#' className='flex font-bold'>
+                            <Link to={'cart'} className='flex font-bold'>
                                 Cart
                                 <div className='pl-2'>
                                     <span className=' bg-slate-800 text-white text-sm font-medium px-2.5 py-1 rounded-full dark:bg-gray-700 dark:text-gray-300'>

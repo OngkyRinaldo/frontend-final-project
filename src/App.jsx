@@ -11,6 +11,7 @@ import { Faq } from './Routes/navigation/help/faq';
 import { ProductDetailRoute } from './Routes/products/productDetails';
 import { ShippingInfo } from './Routes/navigation/help/shippingInfo';
 import { ReturnExchangesInfo } from './Routes/navigation/help/returnExchangesInfo';
+import { CartRoute } from './Routes/cart/cart';
 
 const App = () => {
     return (
@@ -28,6 +29,10 @@ const App = () => {
                     <Route
                         path='productDetails/:id'
                         element={<ProductDetailRoute />}
+                    />
+                    <Route
+                        path='cart'
+                        element={<CartRoute />}
                     />
 
                     {/* help page  start*/}
