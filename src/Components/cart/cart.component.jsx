@@ -72,8 +72,8 @@ export const Cart = () => {
                                         </div>
                                     </th>
                                     <th>
-                                        <div className=' -mt-11  lg:-mt-20 xl:-mt-28 text-end font-semibold text-base'>
-                                            <td className='block'>
+                                        <div className=' text-end font-semibold text-base '>
+                                            <td className='block lg:mb-14'>
                                                 {Products[id - 1].price}
                                             </td>
 
@@ -94,12 +94,12 @@ export const Cart = () => {
                                 {Products[id - 1].price}
                             </span>
                         </div>
-                        <div className='flex items-center border-b  border-slate-300 pb-5 justify-center md:justify-end'>
+                        <div className='flex items-center border-b  border-slate-300 text-center justify-center md:justify-end'>
                             <button
                                 onClick={() =>
                                     navigate(`/shipping/${Products[id - 1].id}`)
                                 }
-                                className='text-center bg-slate-900 text-white rounded-lg font-semibold text-base  py-3 w-full md:w-1/3 md:px-28 hover:opacity-75'
+                                className=' bg-slate-900 text-white rounded-lg font-semibold text-base  py-3 w-full md:w-1/3 md:px-28 hover:opacity-75'
                             >
                                 Checkout
                             </button>

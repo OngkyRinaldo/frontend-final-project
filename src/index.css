@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
 }
-
-/* * {
+/* 
+* {
   border: 1px solid rgb(157, 253, 145);
 } */

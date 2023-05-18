@@ -116,7 +116,7 @@ export const Shipping = () => {
                             <div className='md:mt-0 lg:md-0 mt-3 mb-6'>
                                 <button
                                     type='submit'
-                                    className='text-white w-full bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-600 font-normal text-sm px-16 py-2.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800 float-left md:float-right'
+                                    className='text-white w-full rounded-lg bg-slate-700 hover:bg-slate-800 focus:ring-4 focus:outline-none focus:ring-slate-600 font-normal text-sm px-16 py-2.5 text-center dark:bg-slate-600 dark:hover:bg-slate-700 dark:focus:ring-slate-800 float-left md:float-right'
                                 >
                                     Continue to Payment
                                 </button>
