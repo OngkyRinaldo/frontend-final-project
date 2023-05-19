@@ -13,6 +13,7 @@ import { ShippingInfo } from './Routes/navigation/help/shippingInfo';
 import { ReturnExchangesInfo } from './Routes/navigation/help/returnExchangesInfo';
 import { CartRoute } from './Routes/cart/cart';
 import { ShippingRoute } from './Routes/cart/shipping';
+import { ErrorPages } from './Routes/ErrorPages';
 
 const App = () => {
     return (
@@ -48,6 +49,8 @@ const App = () => {
                     <Route path='faq' element={<Faq />} />
                     {/* navigation page  end*/}
                 </Route>
+
+                <Route path='*' element={<ErrorPages />} />
             </Routes>
         </>
     );
