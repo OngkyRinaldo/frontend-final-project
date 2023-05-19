@@ -12,6 +12,27 @@
         "price": "$229",
         "image": "https://cdn.shopify.com/s/files/1/0505/9044/9849/products/ETQ-Januari23-0396_v1crob_3840x.jpg?v=1678109861",
         "material": "Full Grain Leather"
+    },
+    {
+        "id": 3,
+        "title": "HT 01 Suede Stone Grey",
+        "price": "$204",
+        "image": "/src/assets/img/Home/carousel/product-list/135800ETQ_230308_041LR_1920x.jpg",
+        "material": "Full Grain Leather"
+    },
+    {
+        "id": 4,
+        "title": "HT 01 Spain 56 ",
+        "price": "$284",
+        "image": "/src/assets/img/Home/carousel/product-list/Spain_56_1920x.jpg",
+        "material": "Full Grain Leather"
+    },
+    {
+        "id": 5,
+        "title": "LT01 White Off White",
+        "price": "$314",
+        "image": "/src/assets/img/Home/carousel/product-list/ETQ-Sporthal-LT01White_Off-White11894_v1crob1_1920x.jpg",
+        "material": "Full Grain Leather"
     }
    
 ]
