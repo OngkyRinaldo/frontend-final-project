@@ -3,9 +3,10 @@ import { Link, Outlet } from 'react-router-dom';
 import logo from '../../assets/img/Home/etq-amsterdam-logo-svg-vector.png';
 import { Search } from '../../Components/Navigation/Search';
 import Products from '../../Products.json';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export const Navigation = () => {
+
     const [showShadow, setShowShadow] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
@@ -21,11 +22,7 @@ export const Navigation = () => {
 
     return (
         <>
-            <div
-                className={`sticky bg-white top-0 z-50 w-full text-center  ${
-                    showShadow ? 'shadow-lg' : ''
-                }`}
-            >
+            <div className={`sticky bg-white top-0 z-50 w-full text-center  ${showShadow ? 'shadow-lg' : ''}`}>
                 <Navbar
                     fluid={true}
                     rounded={true}

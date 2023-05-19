@@ -4,9 +4,9 @@ export const ProductsList = ({ product }) => {
     const navigate = useNavigate();
     return (
         <button onClick={() => navigate(`/productDetails/${product.id}`)}>
-            <div className='max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 text-center'>
+            <div className='max-w-sm bg-white border border-gray-200 group overflow-hidden  hover:scale-[106%] transition duration-500 ease-in-out rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 text-center'>
                 <img
-                    className='rounded-t-lg h-52 object-cover sm:w-full md:rounded-lg'
+                    className='rounded-t-lg h-52 object-cover group-hover:scale-[97%]  transition duration-500 ease-in-out sm:w-full md:rounded-lg'
                     src={product.image}
                     alt={product.title}
                 />
