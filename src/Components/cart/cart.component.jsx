@@ -49,7 +49,7 @@ export const Cart = () => {
                             </thead>
                             <tbody className='text-slate-800'>
                                 <tr className='bg-white dark:bg-gray-800 border-b border-slate-300 hover:bg-slate-200'>
-                                    <th
+                                    <td
                                         scope='row'
                                         className='px-1 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white'
                                     >
@@ -68,17 +68,15 @@ export const Cart = () => {
                                                 </span>
                                             </div>
                                         </div>
-                                    </th>
-                                    <th>
-                                        <div className=' text-end font-semibold text-base '>
-                                            <td className='block lg:mb-16'>
-                                                {Products[id - 1].price}
-                                            </td>
+                                    </td>
+                                    <th className=' text-end font-semibold text-base '>
+                                        <p className='block lg:mb-16'>
+                                            {Products[id - 1].price}
+                                        </p>
 
-                                            <Link to='#' className='underline '>
-                                                Delete
-                                            </Link>
-                                        </div>
+                                        <Link to='#' className='underline '>
+                                            Delete
+                                        </Link>
                                     </th>
                                 </tr>
                             </tbody>

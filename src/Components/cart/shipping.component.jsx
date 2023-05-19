@@ -11,7 +11,7 @@ export const Shipping = () => {
                 </h2>
                 <div className='flex  '>
                     <div className='w-full lg:w-3/5  '>
-                        <htmlForm className='flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 md:gap-2'>
+                        <form className='flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 md:gap-2'>
                             <div className='mb-6'>
                                 <label
                                     htmlFor='firstName'
@@ -121,7 +121,7 @@ export const Shipping = () => {
                                     Continue to Payment
                                 </button>
                             </div>
-                        </htmlForm>
+                        </form>
                     </div>
                     <div className='hidden lg:inline lg:w-2/5 lg:ml-5 '>
                         <div className='flex py-3 justify-center lg:border-b-4 lg:border-black'>
@@ -136,9 +136,9 @@ export const Shipping = () => {
                                 </h3>
                             </div>
                             <div className='   text-end font-semibold text-base'>
-                                <td className='block'>
+                                <p className='block'>
                                     {Products[id - 1].price}
-                                </td>
+                                </p>
 
                                 <Link to='#' className='underline '>
                                     Delete

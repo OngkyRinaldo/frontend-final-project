@@ -20,8 +20,8 @@ export const Search = ({ placehoder, Products }) => {
         setWordEntered('');
     };
     return (
-        <div className=''>
-            <div className=''>
+        <>
+            <div>
                 <input
                     type='text'
                     className='py-1 rounded-lg bg-white  text-lg p-[15px] h-7 w-72'
@@ -55,6 +55,6 @@ export const Search = ({ placehoder, Products }) => {
                     })}
                 </div>
             )}
-        </div>
+        </>
     );
 };

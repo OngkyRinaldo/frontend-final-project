@@ -93,42 +93,41 @@ export const Navigation = () => {
                             Shop All
                         </Link>
 
-                        <Link>
-                            <div className='flex md:order-2 items-center justify-center ml-2 text-lg'>
-                                <Dropdown
-                                    arrowIcon={true}
-                                    inline={true}
-                                    label='Help '
-                                >
-                                    <Dropdown.Item>
-                                        <Link
-                                            to={'overview'}
-                                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white '
-                                        >
-                                            Overview
-                                        </Link>
-                                    </Dropdown.Item>
+                        <div className='flex md:order-2 items-center justify-center ml-2 text-lg'>
+                            <Dropdown
+                                arrowIcon={true}
+                                inline={true}
+                                label='Help '
+                            >
+                                <Dropdown.Item>
+                                    <Link
+                                        to={'overview'}
+                                        className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white '
+                                    >
+                                        Overview
+                                    </Link>
+                                </Dropdown.Item>
 
-                                    <Dropdown.Item>
-                                        <Link
-                                            to={'sizeGuide'}
-                                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
-                                        >
-                                            Size Guide
-                                        </Link>
-                                    </Dropdown.Item>
+                                <Dropdown.Item>
+                                    <Link
+                                        to={'sizeGuide'}
+                                        className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                                    >
+                                        Size Guide
+                                    </Link>
+                                </Dropdown.Item>
 
-                                    <Dropdown.Item>
-                                        <Link
-                                            to={'faq'}
-                                            className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
-                                        >
-                                            FAQ
-                                        </Link>
-                                    </Dropdown.Item>
-                                </Dropdown>
-                            </div>
-                        </Link>
+                                <Dropdown.Item>
+                                    <Link
+                                        to={'faq'}
+                                        className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                                    >
+                                        FAQ
+                                    </Link>
+                                </Dropdown.Item>
+                            </Dropdown>
+                        </div>
+
                         <Link>
                             <Search
                                 placehoder={'Search Products...'}
@@ -138,7 +137,6 @@ export const Navigation = () => {
                     </Navbar.Collapse>
                 </Navbar>
             </div>
-
             <Outlet />
         </>
     );

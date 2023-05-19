@@ -229,20 +229,17 @@ export const Faq = () => {
                                                 <p className='mb-2 text-base text-slate-500 dark:text-white '>
                                                     You can check on your order
                                                     anytime. To do so: <br />{' '}
-                                                    <ol type='1'>
-                                                        <li>
-                                                            Log in to your
-                                                            account.
-                                                        </li>
-                                                        <li>
-                                                            Under ‘Orders’,
-                                                            select your order.
-                                                        </li>
-                                                        <li>
-                                                            From here, you can
-                                                            view order details.
-                                                        </li>
-                                                    </ol>
+                                                    <span>
+                                                        Log in to your account.
+                                                    </span>
+                                                    <span>
+                                                        Under ‘Orders’, select
+                                                        your order.
+                                                    </span>
+                                                    <span>
+                                                        From here, you can view
+                                                        order details.
+                                                    </span>
                                                     <br />
                                                     You can also access your
                                                     order info through your
@@ -266,23 +263,20 @@ export const Faq = () => {
                                                 <p className='mb-2 text-base text-slate-500 dark:text-white '>
                                                     You can check on your order
                                                     anytime. To do so : <br />
-                                                    <ol type='1'>
-                                                        <li>
-                                                            Log in to your
-                                                            account.
-                                                        </li>
-                                                        <li>
-                                                            Under{' '}
-                                                            <strong className='font-extrabold text-black mr-1'>
-                                                                ‘Orders’
-                                                            </strong>
-                                                            , select your order.
-                                                        </li>
-                                                        <li>
-                                                            From here, you can
-                                                            view order details
-                                                        </li>
-                                                    </ol>
+                                                    <span>
+                                                        Log in to your account.
+                                                    </span>
+                                                    <span>
+                                                        Under{' '}
+                                                        <strong className='font-extrabold text-black mr-1'>
+                                                            ‘Orders’
+                                                        </strong>
+                                                        , select your order.
+                                                    </span>
+                                                    <span>
+                                                        From here, you can view
+                                                        order details
+                                                    </span>
                                                     <br />
                                                     You can also access your
                                                     order info through your
