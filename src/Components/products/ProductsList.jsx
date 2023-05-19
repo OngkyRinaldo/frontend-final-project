@@ -18,6 +18,9 @@ export const ProductsList = ({ product }) => {
                     <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
                         {product.price}
                     </p>
+                    <p className='mb-3 font-normal text-base text-gray-700 dark:text-gray-400'>
+                        {product.material}
+                    </p>
                 </div>
             </div>
         </button>

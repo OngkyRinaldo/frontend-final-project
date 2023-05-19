@@ -41,7 +41,7 @@ export const Cart = () => {
 
                                     <th
                                         scope='col'
-                                        className='hidden lg:block lg:py-4 lg:text-end '
+                                        className='hidden md:block lg:py-4 lg:text-end '
                                     >
                                         Price
                                     </th>
@@ -57,16 +57,14 @@ export const Cart = () => {
                                             <img
                                                 src={Products[id - 1].image}
                                                 alt={Products[id - 1].title}
-                                                className='w-1/4'
+                                                className='w-1/4 h-20 lg:h-36 object-cover'
                                             />
                                             <div className=' w-3/5 ml-5'>
                                                 <h3 className='block font-semibold  text-slate-800 text-lg mb-1 truncate'>
-                                                    Air Jordan 1 Mid Reverse
-                                                    Bred Kids
+                                                    {Products[id - 1].title}
                                                 </h3>
-
-                                                <span className='block text-slate-600 font-normal mb-1 text-sm md:hidden'>
-                                                    Pri White
+                                                <span className='block text-slate-600 font-normal mb-1 text-sm '>
+                                                    {Products[id - 1].material}
                                                 </span>
                                             </div>
                                         </div>
