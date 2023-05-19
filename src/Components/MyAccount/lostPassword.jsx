@@ -34,7 +34,7 @@ export const LostPassword = () => {
                         <form className='grid grid-cols-1 gap-2 md:grid-cols-1 lg:grid-cols-1 md:gap-4 lg:gap-6 mt-3 md:mt-10'>
                             <div className='mb-3 md:mb-6'>
                                 <label
-                                    for='email'
+                                    htmlFor='email'
                                     className='block mb-2 text-sm font-normal text-gray-900 dark:text-white'
                                 >
                                     Email
