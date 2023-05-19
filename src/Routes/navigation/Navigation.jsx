@@ -3,9 +3,10 @@ import { Link, Outlet } from 'react-router-dom';
 import logo from '../../assets/img/Home/etq-amsterdam-logo-svg-vector.png';
 import { Search } from '../../Components/Navigation/Search';
 import Products from '../../Products.json';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export const Navigation = () => {
+
     const [showShadow, setShowShadow] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
@@ -21,22 +22,15 @@ export const Navigation = () => {
 
     return (
         <>
-            <div
-                className={`sticky bg-white top-0 z-50 w-full text-center  ${
-                    showShadow ? 'shadow-lg' : ''
-                }`}
-            >
+            <div className={`sticky bg-white top-0 z-50 w-full text-center  ${showShadow ? 'shadow-lg' : ''}`}>
                 <Navbar
                     fluid={true}
                     rounded={true}
-                    className='container mx-auto '
-                >
+                    className='container mx-auto '    >
                     <Link to='/'>
-                        <img
-                            src={logo}
+                        <img src={logo}
                             className='mr-6 h-8 sm:h-9 '
-                            alt='ETQ Logo'
-                        />
+                            alt='ETQ Logo' />
                     </Link>
 
                     <div className='flex md:order-2'>
@@ -47,10 +41,8 @@ export const Navigation = () => {
                                 <Avatar
                                     alt='User settings'
                                     img='https://flowbite.com/docs/images/people/profile-picture-1.jpg'
-                                    rounded={true}
-                                />
-                            }
-                        >
+                                    rounded={true} />
+                            }  >
                             <Dropdown.Header>
                                 <span className='block text-sm'>username</span>
                                 <span className='block truncate text-sm font-medium'>
@@ -80,16 +72,13 @@ export const Navigation = () => {
                         <Navbar.Toggle />
                     </div>
                     <Navbar.Collapse>
-                        <Link
-                            to='/'
-                            className='text-lg  block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
-                        >
+                        <Link to='/'
+                            className='text-lg  block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'>
                             Home
                         </Link>
                         <Link
                             to='products'
-                            className='text-lg block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
-                        >
+                            className='text-lg block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'>
                             Shop All
                         </Link>
 
@@ -131,8 +120,7 @@ export const Navigation = () => {
                         <Link>
                             <Search
                                 placehoder={'Search Products...'}
-                                Products={Products}
-                            />
+                                Products={Products} />
                         </Link>
                     </Navbar.Collapse>
                 </Navbar>
