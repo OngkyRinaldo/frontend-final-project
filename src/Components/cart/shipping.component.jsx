@@ -11,10 +11,10 @@ export const Shipping = () => {
                 </h2>
                 <div className='flex  '>
                     <div className='w-full lg:w-3/5  '>
-                        <form className='flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 md:gap-2'>
+                        <htmlForm className='flex flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 md:gap-2'>
                             <div className='mb-6'>
                                 <label
-                                    for='firstName'
+                                    htmlFor='firstName'
                                     className='block mb-2 text-sm font-normal text-gray-900 dark:text-white'
                                 >
                                     First name
@@ -29,7 +29,7 @@ export const Shipping = () => {
                             </div>
                             <div className='mb-6'>
                                 <label
-                                    for='lastName'
+                                    htmlFor='lastName'
                                     className='block mb-2 text-sm font-normal text-gray-900 dark:text-white'
                                 >
                                     Last name
@@ -45,7 +45,7 @@ export const Shipping = () => {
 
                             <div className='mb-6'>
                                 <label
-                                    for='email'
+                                    htmlFor='email'
                                     className='block mb-2 text-sm font-normal text-gray-900 dark:text-white'
                                 >
                                     Email
@@ -60,7 +60,7 @@ export const Shipping = () => {
                             </div>
                             <div className='mb-6'>
                                 <label
-                                    for='Phone'
+                                    htmlFor='Phone'
                                     className='block mb-2 text-sm font-normal text-gray-900 dark:text-white'
                                 >
                                     Phone
@@ -74,7 +74,7 @@ export const Shipping = () => {
                             </div>
                             <div className='mb-6'>
                                 <label
-                                    for='address'
+                                    htmlFor='address'
                                     className='block mb-2 text-sm font-normal text-gray-900 dark:text-white'
                                 >
                                     Address
@@ -88,7 +88,7 @@ export const Shipping = () => {
                             </div>
                             <div className='mb-6'>
                                 <label
-                                    for='postal-code'
+                                    htmlFor='postal-code'
                                     className='block mb-2 text-sm font-normal text-gray-900 dark:text-white'
                                 >
                                     Postal Code
@@ -121,14 +121,14 @@ export const Shipping = () => {
                                     Continue to Payment
                                 </button>
                             </div>
-                        </form>
+                        </htmlForm>
                     </div>
                     <div className='hidden lg:inline lg:w-2/5 lg:ml-5 '>
                         <div className='flex py-3 justify-center lg:border-b-4 lg:border-black'>
                             <img
                                 src={Products[id - 1].image}
                                 alt={Products[id - 1].title}
-                                className='w-1/4'
+                                className='w-1/4 lg:h-36 object-cover'
                             />
                             <div className=' w-3/5 ml-2'>
                                 <h3 className='block font-semibold text-slate-800 text-lg mb-1 truncate'>

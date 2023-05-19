@@ -35,9 +35,9 @@ export const Overview = () => {
                                 <p className='text-sm font-base'>
                                     Can't find answer you are looking for? You
                                     can send an e-mail to
-                                    <a href='#' className='underline ml-1'>
+                                    <Link to='#' className='underline ml-1'>
                                         service@fsd-kelompok9.com
-                                    </a>
+                                    </Link>
                                 </p>
                             </div>
                         </div>
