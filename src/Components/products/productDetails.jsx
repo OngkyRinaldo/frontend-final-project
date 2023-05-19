@@ -5,7 +5,7 @@ export const ProductDetail = () => {
     const { id } = useParams();
     const navigate = useNavigate();
     return (
-        <main className='container  mx-0 mb-10'>
+        <main className='container   mx-auto mb-10'>
             <div className='grid grid-cols-1 md:gap-4 md:grid-cols-3 px-5 md:mt-5'>
                 <div className='col-span-2  '>
 

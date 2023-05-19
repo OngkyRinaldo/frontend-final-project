@@ -59,8 +59,8 @@ export const Cart = () => {
                                                 alt={Products[id - 1].title}
                                                 className='w-1/4'
                                             />
-                                            <div className=' w-3/5 ml-2'>
-                                                <h3 className='block font-semibold text-slate-800 text-lg mb-1 truncate'>
+                                            <div className=' w-3/5 ml-5'>
+                                                <h3 className='block font-semibold  text-slate-800 text-lg mb-1 truncate'>
                                                     Air Jordan 1 Mid Reverse
                                                     Bred Kids
                                                 </h3>
@@ -73,7 +73,7 @@ export const Cart = () => {
                                     </th>
                                     <th>
                                         <div className=' text-end font-semibold text-base '>
-                                            <td className='block lg:mb-14'>
+                                            <td className='block lg:mb-16'>
                                                 {Products[id - 1].price}
                                             </td>
 

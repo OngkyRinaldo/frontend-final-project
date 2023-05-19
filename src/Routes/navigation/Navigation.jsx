@@ -22,7 +22,7 @@ export const Navigation = () => {
 
     return (
         <>
-            <div className={`sticky top-0 z-50 w-full text-center  ${showShadow ? 'shadow-lg' : ''}`}>
+            <div className={`sticky bg-white top-0 z-50 w-full text-center  ${showShadow ? 'shadow-lg' : ''}`}>
                 <Navbar
                     fluid={true}
                     rounded={true}
